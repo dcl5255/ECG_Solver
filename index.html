@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,18 +25,14 @@
             <option label="+">+</option>
             <option label="-">-</option>
         </select>
-    </div>
 
-    <div>
         <label for "d2">D2</label>
         <select id="d2" onchange="updateAxis()">
             <option label=""></option>
             <option label="+">+</option>
             <option label="-">-</option>
         </select>
-    </div>
 
-    <div>
         <label for "d3">D3</label>
         <select id="d3" onchange="updateAxis()">
             <option label=""></option>
@@ -51,18 +48,14 @@
             <option label="+">+</option>
             <option label="-">-</option>
         </select>
-    </div>
 
-    <div>
         <label for "aVL">aVL</label>
         <select id="aVL" onchange="updateAxis()">
             <option label=""></option>
             <option label="+">+</option>
             <option label="-">-</option>
         </select>
-    </div>
 
-    <div>
         <label for "aVF">aVF</label>
         <select id="aVF" onchange="updateAxis()">
             <option label=""></option>
@@ -72,12 +65,18 @@
     </div>
 
 
-    <p id="min"></p>
-    <p id="max"></p>
+    <div id="container">
+        <div id="overlay"></div>
+        <div id="ecg-axis"></div>
+    </div>
+
+
+    <p>Min: <span id="min">-180</span>°</p>
+    <p>Max: <span id="max">180</span>°</p>
 
 
 
-    
+
     <script src="main.js"></script>
 </body>
 

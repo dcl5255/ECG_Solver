@@ -4,6 +4,8 @@ conditionElement = document.getElementById("condition");
 minElement = document.getElementById("min");
 maxElement = document.getElementById("max");
 
+var root = document.querySelector(':root');
+
 
 
 function updateCondition() {
@@ -104,11 +106,16 @@ function updateAxis(){
   console.log(`Min: ${rangeMin}, Max: ${rangeMax}`);
   minElement.innerText = rangeMin;
   maxElement.innerText = rangeMax;
+
+  updateCSS(rangeMin, rangeMax);
   
 }
 
 
-
+function updateCSS(min, max) {
+    root.style.setProperty('--min-deg', `${min}deg`);
+    root.style.setProperty('--max-deg', `${max}deg`);
+}
 
 
 function range(start, stop, step) {
