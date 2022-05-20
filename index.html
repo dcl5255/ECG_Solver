@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for "ph">Enter pH </label>
+    <input type="text" id="ph" oninput="updateCondition()" />
+
+    <br>
+    <p id="condition">testt</p>
+
+    <br>
+
+    <div>
+        <label for "d1">D1</label>
+        <select id="d1" onchange="updateAxis()">
+            <option label=""></option>
+            <option label="+">+</option>
+            <option label="-">-</option>
+        </select>
+    </div>
+
+    <div>
+        <label for "d2">D2</label>
+        <select id="d2" onchange="updateAxis()">
+            <option label=""></option>
+            <option label="+">+</option>
+            <option label="-">-</option>
+        </select>
+    </div>
+
+    <div>
+        <label for "d3">D3</label>
+        <select id="d3" onchange="updateAxis()">
+            <option label=""></option>
+            <option label="+">+</option>
+            <option label="-">-</option>
+        </select>
+    </div>
+
+    <div>
+        <label for "aVR">aVR</label>
+        <select id="aVR" onchange="updateAxis()">
+            <option label=""></option>
+            <option label="+">+</option>
+            <option label="-">-</option>
+        </select>
+    </div>
+
+    <div>
+        <label for "aVL">aVL</label>
+        <select id="aVL" onchange="updateAxis()">
+            <option label=""></option>
+            <option label="+">+</option>
+            <option label="-">-</option>
+        </select>
+    </div>
+
+    <div>
+        <label for "aVF">aVF</label>
+        <select id="aVF" onchange="updateAxis()">
+            <option label=""></option>
+            <option label="+">+</option>
+            <option label="-">-</option>
+        </select>
+    </div>
+
+
+    <p id="min"></p>
+    <p id="max"></p>
+
+
+
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
