@@ -10,11 +10,6 @@
 </head>
 
 <body>
-    <label for "ph">Enter pH </label>
-    <input type="text" id="ph" oninput="updateCondition()" />
-
-    <br>
-    <p id="condition">testt</p>
 
     <br>
 
@@ -41,6 +36,8 @@
         </select>
     </div>
 
+    <br>
+
     <div>
         <label for "aVR">aVR</label>
         <select id="aVR" onchange="updateAxis()">
@@ -65,17 +62,16 @@
     </div>
 
 
+    <br>
+
     <div id="container">
         <div id="overlay"></div>
         <div id="ecg-axis"></div>
     </div>
 
 
-    <p>Min: <span id="min">-180</span>°</p>
-    <p>Max: <span id="max">180</span>°</p>
-
-
-
+    <p>Bound 1: <span id="min">-180</span>°</p>
+    <p>Bound 2: <span id="max">180</span>°</p>
 
     <script src="main.js"></script>
 </body>
