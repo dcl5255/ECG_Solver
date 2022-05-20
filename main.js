@@ -91,7 +91,6 @@ function updateAxis() {
 
 
 function updateCSS(min, max) {
-    
     root.style.setProperty('--min-deg', `${min}deg`);
     root.style.setProperty('--max-deg', `${max}deg`);
 }
